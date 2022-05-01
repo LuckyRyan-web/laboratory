@@ -3,16 +3,17 @@ import React from 'react'
 import Index from '@/pages/Index'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { getRoutes, NavigateWrapper } from '@/router'
+import Nav from '@/components/Nav'
+import Container from '@/components/Container'
 
 const App = () => {
     return (
         <>
-            <BrowserRouter>
-                <Routes>
-                    {getRoutes()}
-                    {/* <Route path='' element={<Index />}></Route> */}
-                </Routes>
-            </BrowserRouter>
+            <Container header={<Nav />}>
+                <BrowserRouter>
+                    <Routes>{getRoutes()}</Routes>
+                </BrowserRouter>
+            </Container>
         </>
     )
 }

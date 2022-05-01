@@ -7,7 +7,6 @@ export interface RouteConfig extends RouteObject {
 
 /** 创建路由 */
 export function createRoutes(routes: RouteConfig[]) {
-    console.log('routes', routes)
     return (
         <>
             {routes.map((route, ix) => (
