@@ -41,6 +41,8 @@ module.exports = {
             'at-rules',
             'rules',
         ],
+        'custom-property-no-missing-var-function': false,
+        "unit-no-unknown": true,
     },
     ignoreFiles: ['node_modules/**/*', 'dist/**/*', '**/typings/**/*'],
 }
